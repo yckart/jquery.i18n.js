@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+        <meta http-equiv='X-UA-Compatible' content='chrome=1'>
+
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Numans'>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+
+        <title>jquery.i18n.js | Makes internationalization simpler as it is</title>
+    </head>
+
+    <body>
+        <h1 class='logo'>i18n</h1>
+
+        <div>
+            <h2>No document yet!</h2>
+            <p>Feel free to write a bit about it.</p>
+        </div>
+
+
+        <div>
+            <h3>Download</h3>
+            <p>
+                Get the <a href='https://raw.github.com/yckart/jquery.i18n.js/master/jquery.i18n.js'>raw</a> script, download the complete <a href='https://github.com/yckart/jquery.i18n.js/zipball/master'>package</a> or fork it on <a href='https://github.com/yckart/jquery.i18n.js'>GitHub</a>.
+            </p>
+        </div>
+
+        <div>
+            <h3>Support</h3>
+            <p>
+                <a href='http://twitter.com/yckart'>@yckart</a> #jquery #i18n<br>
+                <a href='http://yckart.com/'>http://yckart.com</a>
+            </p>
+
+
+            <h5>License</h5>
+            <tt>
+                <p>Copyright (c) &lt;2013&gt; &lt;Yannick Albert&gt;</p>
+
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software"), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions:</p>
+
+                <p>The above copyright notice and this permission notice shall be included in
+                all copies or substantial portions of the Software.</p>
+
+                <p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                THE SOFTWARE.</p>
+            </tt>
+        </div>
+
+        <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+        <script src='jquery.i18n.js'></script>
+        <script>
+
+            $(window).on('resize', function(){
+                $('.logo').css({
+                    fontSize: Math.max(Math.min($(window).outerWidth() / (1 * 6), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY))
+                });
+            }).resize();
+        </script>
+    </body>
+</html>
